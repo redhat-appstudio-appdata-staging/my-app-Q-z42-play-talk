@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-gsvn
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jhutar-tenant/my-app/devfile-sample-python-basic-gsvn@sha256:ee67b65772fe18dd8b362012c0dd7364e6b45ca6cfea3aa334ace1a7043ea1b3
+        name: my-python
+        resources: {}
+status: {}
